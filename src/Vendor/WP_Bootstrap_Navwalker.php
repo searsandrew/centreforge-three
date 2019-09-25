@@ -13,7 +13,7 @@ namespace Mayfifteenth\Centreforge\Vendor;
  * @extends        Walker_Nav_Menu
  * @author         Javier Prieto
  */
-class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+class WP_Bootstrap_Navwalker extends \Walker_Nav_Menu {
     /**
      * @since       1.0.0
      * @access      public
