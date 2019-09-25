@@ -36,6 +36,10 @@ class Settings
             'width'       => 400,
             'flex-height' => true,
             'flex-width'  => true,
-        ) );
+        ));
+
+        register_nav_menus( array(
+            'primary' => __( 'Primary Menu', 'centreforge' ),
+        ));
     }
 }
