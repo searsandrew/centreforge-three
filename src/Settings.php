@@ -33,6 +33,7 @@ class Settings
     public function cf_enqueue_scripts() : void
     {
         wp_enqueue_style( 'bootstrapstyle', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
+        wp_enqueue_style( 'style', get_stylesheet_uri() );
 
         wp_dequeue_script( 'jquery' );
         wp_enqueue_script( 'jquery-cdn', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), true);
