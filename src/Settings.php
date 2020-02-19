@@ -66,6 +66,10 @@ class Settings
             'default-repeat'         => 'no-repeat',  // 'repeat-x', 'repeat-y', 'repeat', 'no-repeat'
             'default-attachment'     => 'fixed',  // 'scroll', 'fixed'
         ));
+
+        //Support for post thumbnails
+        add_theme_support( 'post-thumbnails' );
+        
     }
 
     private function cf_register_settings() : void
