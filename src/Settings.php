@@ -69,6 +69,7 @@ class Settings
 
         //Support for post thumbnails
         add_theme_support( 'post-thumbnails' );
+        add_image_size( 'card-top-feature', 828, 315, true );
         
     }
 
