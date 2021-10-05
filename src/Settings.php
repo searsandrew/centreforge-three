@@ -32,12 +32,12 @@ class Settings
      */
     public function cf_enqueue_scripts() : void
     {
-        wp_enqueue_style( 'bootstrapstyle', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
+        wp_enqueue_style( 'bootstrapstyle', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' );
         wp_enqueue_style( 'style', get_stylesheet_uri() );
 
         wp_dequeue_script( 'jquery' );
         wp_enqueue_script( 'jquery-cdn', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), true);
-        wp_enqueue_script( 'bootstrap-cdn', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", array('jquery-cdn'), true);
+        wp_enqueue_script( 'bootstrap-cdn', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js", array('jquery-cdn'), true);
     }
 
     /**
